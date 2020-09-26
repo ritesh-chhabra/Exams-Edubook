@@ -10,6 +10,7 @@ API's:
 1. Create exam (subcategory is optional)
 ==>
 POST Request - http://localhost:5000/exam
+Body:
 {
     "name":"IIT-JEE"
 }
@@ -28,6 +29,7 @@ GET REquest - http://localhost:5000/exam
 3. Add sub-categories, subjects and topics under an exam only one record at a time.
 ==>
 PUT Request - http://localhost:5000/exam
+Body:
 
 {
        "name": "XAT",
@@ -46,6 +48,7 @@ PUT Request - http://localhost:5000/exam
 ==>
 GET Request - http://localhost:5000/exam/GATE5
 
+Body:
 {
     "_id": {
         "$oid": "5f6f43c831243b7a51f0843b"
@@ -111,4 +114,3 @@ GET Request - http://localhost:5000/exam/GATE5
     ],
     "subjects": []
 }
-
